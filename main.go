@@ -47,7 +47,7 @@ func main() {
 	}
 
 	endingStruct := new(ComplexStruct)
-	err = gocty.FromCtyValue(ctyValue, &endingStruct)
+	err = gocty.FromCtyValue(ctyValue, endingStruct)
 
 	if startingStruct == *endingStruct {
 		fmt.Println("Yay!")
